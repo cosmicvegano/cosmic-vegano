@@ -6,6 +6,10 @@ section.carousel {
         img.soon {
             display: block;
             margin: 0 auto;
+            
+            @media (max-width: 600px) {
+                max-width: 300px;
+            }
         }
 
         .swiper-slide {

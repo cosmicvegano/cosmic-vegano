@@ -23,13 +23,20 @@ section.category-header {
       width: 40px;
     }
   }
-  
-  .img-category-header {
-    @include boxMain(var(--pink), transparent);
-    margin: 0;
-    padding: 0;
+
+  .box-img-category-header {
+    @include boxMain(var(--pink), red);
+    border-width: 3px;
     height: 312px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
     width: 100%;
+
+    .img-category-header {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -54,7 +61,7 @@ section.category-header {
       }
     }
 
-    .img-category-header {
+    .box-img-category-header {
       height: 353px;
       width: 376px;
     }

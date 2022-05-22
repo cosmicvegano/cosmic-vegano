@@ -43,6 +43,7 @@
   width: $w;
   height: $h;
 }
+
 @mixin sectionNav($fz, $pad) {
   cursor: pointer;
   text-decoration: none;

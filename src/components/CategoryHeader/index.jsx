@@ -27,11 +27,13 @@ const CategoryHeader = ({ categoryToShow }) => {
         </div>
 
         {categoryToShow && (
-          <img
-            alt={`Imagen de la categoria: ${categoryToShow.nombre}`}
-            className="img-category-header"
-            src={`/img/categoria/${categoryToShow.img}`}
-          />
+          <div className="box-img-category-header">
+            <img
+              alt={`Imagen de la categoria: ${categoryToShow.nombre}`}
+              className="img-category-header"
+              src={`/img/categoria/${categoryToShow.img}`}
+            />
+          </div>
         )}
       </section>
     </>
