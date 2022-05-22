@@ -42,7 +42,7 @@ const Navbar = ({ showBtns }) => {
                 <Link
                   key={categorie.id}
                   className="section-menu"
-                  to={`${categorie.tipo == 'producto' ? 'categoria' : 'combos'}/${
+                  to={`/${categorie.tipo == 'producto' ? 'categoria' : 'combos'}/${
                     categorie.nombre
                   }`}
                 >
