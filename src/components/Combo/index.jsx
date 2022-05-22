@@ -18,6 +18,8 @@ const Combo = () => {
     getItemToShow(id, '/combo')
   }, [getItemToShow, id])
 
+  const wapp = item && `https://wa.me/543625140121?text=Hola%21%20quiero%20consultar%20sobre:%20`
+
   return item == null ? (
     <h2>Loading</h2>
   ) : (
@@ -51,9 +53,9 @@ const Combo = () => {
 
       <div className="box-price">
         <h3>{formatPrice(item.precio)}</h3>
-        <Link to="/">
+        <a href={wapp} rel="noreferrer" target="_blank">
           <img alt="whats-app" src={wpp} />
-        </Link>
+        </a>
       </div>
 
       <a className="button-buy-combo" href={`${item.link}`} rel="noreferrer" target="_blank">

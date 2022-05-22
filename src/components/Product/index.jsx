@@ -26,6 +26,8 @@ const Product = () => {
     setPack(e.target.value)
   }
 
+  const wapp = item && `https://wa.me/543625140121?text=Hola%21%20quiero%20consultar%20sobre:%20`
+
   return item == null ? (
     <h2>Loading</h2>
   ) : (
@@ -102,9 +104,9 @@ const Product = () => {
         <img alt="mp" src={mp} />
       </a>
 
-      <Link to="/">
+      <a href={wapp} rel="noreferrer" target="_blank">
         <img alt="whats-app" className="wpp" src={wpp} />
-      </Link>
+      </a>
     </div>
   )
 }
